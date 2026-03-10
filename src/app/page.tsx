@@ -68,6 +68,16 @@ const apps = [
     downloadUrl: "#",
     downloadType: "direct",
   },
+  {
+    id: 7,
+    name: "1Calendar",
+    icon: "📅",
+    description: "A beautiful calendar app for macOS",
+    category: "productivity",
+    color: "blue",
+    downloadUrl: "https://github.com/x1claw/1Calendar-release",
+    downloadType: "direct",
+  },
 ];
 
 const socials = [
@@ -156,7 +166,8 @@ export default function Home() {
                   app.color === 'pink' ? 'glow-pink' :
                   app.color === 'cyan' ? 'glow-cyan' :
                   app.color === 'emerald' ? 'glow-emerald' :
-                  app.color === 'amber' ? 'glow-amber' : 'glow-violet'
+                  app.color === 'amber' ? 'glow-amber' :
+                  app.color === 'blue' ? 'glow-cyan' : 'glow-violet'
                 }`}
               >
                 {/* App icon */}
@@ -165,7 +176,8 @@ export default function Home() {
                   app.color === 'pink' ? 'from-pink-500 to-rose-600' :
                   app.color === 'cyan' ? 'from-cyan-500 to-blue-600' :
                   app.color === 'emerald' ? 'from-emerald-500 to-teal-600' :
-                  app.color === 'amber' ? 'from-amber-500 to-orange-600' : 'from-violet-500 to-purple-600'
+                  app.color === 'amber' ? 'from-amber-500 to-orange-600' :
+                  app.color === 'blue' ? 'from-blue-500 to-cyan-600' : 'from-violet-500 to-purple-600'
                 }`}>
                   <span className="text-4xl">{app.icon}</span>
                 </div>
