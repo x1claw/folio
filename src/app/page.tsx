@@ -154,38 +154,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="relative z-10 py-24 px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="glass-card p-12 md:p-16 text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">
-              <span className="gradient-text">About Me</span>
-            </h2>
-            <p className="text-lg text-[var(--foreground-muted)] leading-relaxed mb-8">
-              I'm a passionate macOS developer dedicated to creating beautiful, functional applications
-              that integrate seamlessly with the Apple ecosystem. Each app is crafted with attention to
-              detail and user experience.
-            </p>
-            <p className="text-lg text-[var(--foreground-muted)] leading-relaxed mb-10">
-              With years of experience in Swift and SwiftUI, I build apps that macOS users love.
-              Check out my apps above or get in touch for custom development.
-            </p>
-            <div className="flex justify-center gap-4">
-              {socials.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  className="icon-glass group"
-                  aria-label={social.label}
-                >
-                  <social.icon className="w-6 h-6 text-white/80 group-hover:text-white transition-colors" />
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
       <footer className="relative z-10 py-12 px-6">
         <div className="max-w-6xl mx-auto text-center">
