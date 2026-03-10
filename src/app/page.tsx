@@ -120,14 +120,6 @@ export default function Home() {
             </button>
           </div>
         </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
-          <span className="text-xs text-[var(--foreground-muted)] uppercase tracking-widest">Scroll</span>
-          <div className="w-6 h-10 rounded-full border-2 border-white/20 flex justify-center pt-2">
-            <div className="w-1.5 h-3 bg-white/50 rounded-full animate-pulse" />
-          </div>
-        </div>
       </section>
 
       {/* App Showcase Section */}
